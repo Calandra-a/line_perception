@@ -11,4 +11,12 @@ stdio.h
 -
 opencv2/opencv.hpp
 -
+opencv2/core/core.hpp
+/home/reeeee/opencv/load/opencv2/core/core.hpp
+opencv2/highgui/highgui.hpp
+/home/reeeee/opencv/load/opencv2/highgui/highgui.hpp
+opencv2/imgproc/imgproc.hpp
+/home/reeeee/opencv/load/opencv2/imgproc/imgproc.hpp
+iostream
+/home/reeeee/opencv/load/iostream
 
