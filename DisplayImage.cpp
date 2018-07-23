@@ -19,7 +19,7 @@ int main(int argc, char** argv )
     
     //convert gray to bw
     Mat img_bw;
-    img_bw = img_gray > 230;
+    img_bw = img_gray > 220;
 
     //display rgb
     //namedWindow("Display Image", WINDOW_AUTOSIZE);
@@ -52,10 +52,10 @@ int main(int argc, char** argv )
         Point pt1, pt2;
         double a = cos(theta), b = sin(theta);
         double x0 = a*rho, y0 = b*rho;
-        pt1.x = cvRound(x0 + 800*(-b));
-        pt1.y = cvRound(y0 + 800*(a));
-        pt2.x = cvRound(x0 - 800*(-b));
-        pt2.y = cvRound(y0 - 800*(a));
+        pt1.x = cvRound(x0 + 1000*(-b));
+        pt1.y = cvRound(y0 + 1000*(a));
+        pt2.x = cvRound(x0 - 1000*(-b));
+        pt2.y = cvRound(y0 - 1000*(a));
         line(cdst, pt1, pt2, Scalar(255,255,255), 3, CV_AA);
     }
     imshow("Detected Lines (in white) - Standard Hough Line Transform", cdst);
