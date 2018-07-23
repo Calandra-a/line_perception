@@ -44,7 +44,7 @@ int main(int argc, char** argv )
 
     // Standard Hough Line Transform
     vector<Vec2f> lines; // will hold the results of the detection
-    HoughLines(edge, lines, 1, CV_PI/15, 150,0, 0 ); // runs the actual detection
+    HoughLines(edge, lines, 1, CV_PI/1, 150,0, 0 ); // runs the actual detection
     // Draw the lines
     for( size_t i = 0; i < lines.size(); i++ )
     {
