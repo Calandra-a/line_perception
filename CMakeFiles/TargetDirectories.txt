@@ -1,3 +1,0 @@
-/home/reeeee/opencv/load/CMakeFiles/rebuild_cache.dir
-/home/reeeee/opencv/load/CMakeFiles/DisplayImage.dir
-/home/reeeee/opencv/load/CMakeFiles/edit_cache.dir
