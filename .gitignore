@@ -1,8 +1,4 @@
 #ignore Everything
-*
-
-#Except
-!.gitignore
-!README.md
-!DisplayImage.cpp
-!CmakeLists.txt
+/build
+/devel
+.catkin_workspace
