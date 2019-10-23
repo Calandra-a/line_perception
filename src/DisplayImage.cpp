@@ -13,6 +13,14 @@ int main(int argc, char** argv )
     Mat image;
     image = imread( argv[1], 1 );
 
+    //TODO Integrate Smoothing Filter
+    for ( int i = 1; i < MAX_KERNEL_LENGTH; i = i + 2 ){
+     blur( image, image, Size( i, i ), Point(-1,-1) );
+      if( display_dst( DELAY_BLUR ) != 0 ){ 
+        return 0;
+        }
+    }
+
     //convert rgb to gray
     Mat img_gray;
     img_gray = imread(argv[1], CV_LOAD_IMAGE_GRAYSCALE);
