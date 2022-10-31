@@ -27,7 +27,7 @@ int main(int argc, char** argv )
     
     //convert gray to bw
     Mat img_bw;
-    img_bw = img_gray > 230;
+    img_bw = img_gray > 225;
 
     //display rgb
     //namedWindow("Display Image", WINDOW_AUTOSIZE);
@@ -42,7 +42,7 @@ int main(int argc, char** argv )
     Mat gray, edge, draw,contourImage, cdst;
     //cvtColor(src1, gray, CV_BGR2GRAY);
  
-    Canny( img_bw, edge, 50, 150, 3);
+    Canny( img_bw, edge, 47, 138, 3);
  
     edge.convertTo(draw, CV_8U);
 
@@ -68,7 +68,7 @@ int main(int argc, char** argv )
     }*/
         // Probabilistic Line Transform
     vector<Vec4i> linesP; // will hold the results of the detection
-    HoughLinesP(edge, linesP, 1, CV_PI/10, 10, 50, 35 ); // runs the actual detection
+    HoughLinesP(edge, linesP, 1, CV_PI/10, 13, 55, 32 ); // runs the actual detection
     // Draw the lines
     for( size_t i = 0; i < linesP.size(); i++ )
     {
