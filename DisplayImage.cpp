@@ -19,7 +19,7 @@ int main(int argc, char** argv )
     
     //convert gray to bw
     Mat img_bw;
-    img_bw = img_gray > 230;
+    img_bw = img_gray > 223;
 
     //display rgb
     //namedWindow("Display Image", WINDOW_AUTOSIZE);
@@ -34,7 +34,7 @@ int main(int argc, char** argv )
     Mat gray, edge, draw,contourImage;
     //cvtColor(src1, gray, CV_BGR2GRAY);
  
-    Canny( img_bw, edge, 50, 150, 3);
+    Canny( img_bw, edge, 55, 163, 3);
  
     edge.convertTo(draw, CV_8U);
 
